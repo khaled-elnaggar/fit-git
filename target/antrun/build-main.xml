@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="maven-antrun-" default="main">
+  <target name="main">
+    <echo level="info" message="" />
+    <echo level="info" message="" />
+    <echo level="info" message="Starting Fitnesse wiki @ ..." />
+    <echo level="info" message="" />
+    <echo level="info" message="  http://localhost:49231/" />
+    <echo level="info" message="" />
+    <java fork="true" classname="fitnesseMain.FitNesseMain" classpathref="maven.test.classpath">
+      <arg line="-p 49231" />
+      <arg line="-d ." />
+      <arg line="-e 0" />
+    </java>
+  </target>
+</project>
